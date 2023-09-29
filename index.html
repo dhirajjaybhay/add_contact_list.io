@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Record App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bb30f56341.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="record-input">
+                <h2>Contact Details</h2>
+                <div class="entry-form">
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+    
+                        <label for="number">Number</label>
+                        <input type="number" id="number" required>
+    
+                    </form>
+
+                    <div class="input-btn">
+                        <span id="error-msg"></span>
+                        <!-- <div><p id="error-msg"></p></div> -->
+                        <button type="submit" id="submit-btn" >
+                            <span><i class="fa-solid fa-plus"></i>  Add Contact</span>
+                        </button>
+                    </div>
+                    <div class="search-btn">
+                    <form>    
+                        <label for="searchName">Enter Name or Number to search</label>
+                        <input type="text" id="searchName" required>
+                    </form>
+
+                    <div class="input-btn">
+                        <button type="submit" id="search-btn-name" >
+                            <span><i class="fa-solid fa-search"></i>  Search</span>
+                        </button>
+                    </div>
+                    <div class="input-reset-btn">
+                        <button type="submit" id="input-reset-btn" >
+                            <span><i class="fa-solid fa-refresh"></i>  Reset Search</span>
+                        </button>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="record-display">
+                <h2 id="record-display-h2">Available contact</h2>
+                <button id="reset-btn">Reset</button>
+                <div class="record-container">
+                    <div class="record-item">
+                        <div class="record-el" id="contactDetail">
+                            <!-- <span>Name :</span>
+                            <span id="name-content">Dhiraj</span>
+                        </div>
+                        <div class="record-el">
+                            <span>contact :</span>
+                            <span id="contact-content">888888888</span>
+                        </div>
+                        <button type="button" id="delet-btn">
+                            <span><i class="fa-solid fa-trash"></i>Delet</span>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+                     
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
